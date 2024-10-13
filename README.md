@@ -9,7 +9,9 @@ Module 21
  - Models
     - AlphabetSoupCharity - HDF5 file output created by initial training code.
     - AlphabetSoupCharity_Optimization - HDF5 file output created by optimization code.
+    - AlphabetSoupCharity_Optimization1 - HDF5 file output created by optimization code.
  - AlphabetSoupCharity_Optimization - jupyter notebook file, created in Google Colab, that contains the code for optimizing the model.
+ - AlphabetSoupCharity_Optimization1 - jupyter notebook file, created in Google Colab, that contains the code for optimizing the model.
  - README - contains final analysis.
  - Starter_Code_Colab - jupyter notebook file, created in Google Colab, that contains the initial code for training the model.
 
@@ -36,9 +38,41 @@ Using bulleted lists and images to support your answers, address the following q
   
 # Compiling, Training, and Evaluating the Model
 
-- How many neurons, layers, and activation functions did you select for your neural network model, and why?
-   - Initially, I used two layers, the first with 80 nodes and the second with 30 nodes. I used one activation function, relu, for both layers. Since we've transformed the data to binary outputs the relu activation function is the most appropriate choice. For the output layer, I chose 1 node as it is a binary classifier model with only one output, ie was the funding application successful yes or no? The output layer activation of sigmoid was used since the model output is a binary classification between 0 and 1. These achieved an accuracy score of 73%, rounded.
- 
-- PHOTOS
+1. How many neurons, layers, and activation functions did you select for your neural network model, and why?
+   
+   -  I implemented a two-layer architecture, with the first layer consisting of 80 nodes and the second layer having 30 nodes. I employed the ReLU activation function for both layers. Given that the data has been transformed into binary outputs, ReLU is the most suitable activation function. For the output layer, I opted for a single node, as this is a binary classification model that only requires one output: whether the funding application was successful (yes or no). I utilized the sigmoid activation function for the output layer, as it produces binary classifications ranging from 0 to 1. This configuration resulted in an accuracy score of approximately 73%
 
-  
+#  Optimization
+
+ - First Optimization Attempt: 2 hidden layers & an outer layer, layer 1: 132 neurons, relu activation, layer 2: 66 neurons, relu activations, and Outer layer: 1 unit, sigmoid activation & adam optimizers for complier. (accuracy score of 72.6%)
+
+ - After Attempt: Use auto-optimizing tuner (Best accuracy score of 72.8%)
+
+ - Last Attempt: Optimized the model by adding an additional layer, adjusting the number of nodes, and leaving the name column as a feature.
+
+   
+
+2.  Were you able to achieve the target model performance?
+   
+    - Yes, with the optimization changes I was able to generate an accuracy score of 79% (rounded), which is higher than the acceptable criteria of 75%.
+ 
+
+3.  What steps did you take in your attempts to increase model performance?
+   
+    - Added a third layer and changed the number of nodes for each layer to 80, 45, and 35 respectively. However, this did not seem to increase my accuracy score. So I reprocessed the data to include the name column, adding it as another feature, and then trained the model again, this time receiving an accuracy score of 78.85%.
+There are several factors that suggest using the name as a feature could enhance the model's accuracy. The "name" column may hold significant information relevant to the classification task, which the model can utilize for learning. For instance, in some scenarios, names might indicate particular categories or classes. Additionally, the "name" column could be correlated with the target variable or other features within the dataset. Incorporating such correlated features enables the model to identify more intricate relationships in the data. Ultimately, including additional features, especially those that provide valuable insights, can contribute to the model's overall complexity.
+ 
+
+# Summary
+
+Summarize the overall results of the deep learning model. Include a recommendation for how a different model could solve this classification problem, and then explain your recommendation.
+
+In summary, the initial deep learning model achieved an accuracy score of 0.7282 with a loss of 0.5662, utilizing two layers with 80 and 30 nodes, respectively. The model excluded the name column from the original dataset. After optimization, the accuracy improved to 0.7884, and the loss decreased to 0.494, employing three layers with 80, 45, and 35 nodes, respectively. The optimized model included the name column as a feature.
+
+
+
+
+
+
+
+
