@@ -54,6 +54,7 @@ Using bulleted lists and images to support your answers, address the following q
 2.  Were you able to achieve the target model performance?
    
     - Yes, with the optimization changes I was able to generate an accuracy score of 79% (rounded), which is higher than the acceptable criteria of 75%.
+      [AlphabetSoupCharity_Optimization1](https://github.com/EvgeniiaKei/deep-learning-challenge/blob/main/AlphabetSoupCharity_Optimization1.ipynb)
  
 
 3.  What steps did you take in your attempts to increase model performance?
