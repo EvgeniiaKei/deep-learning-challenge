@@ -6,7 +6,7 @@ Module 21
 
 # Navigation
 
- - Models
+ - [Models](https://github.com/EvgeniiaKei/deep-learning-challenge/tree/main/Models)
     - AlphabetSoupCharity - HDF5 file output created by initial training code.
     - AlphabetSoupCharity_Optimization - HDF5 file output created by optimization code.
     - AlphabetSoupCharity_Optimization1 - HDF5 file output created by optimization code.
