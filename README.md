@@ -10,10 +10,9 @@ Module 21
     - AlphabetSoupCharity - HDF5 file output created by initial training code.
     - AlphabetSoupCharity_Optimization - HDF5 file output created by optimization code.
     - AlphabetSoupCharity_Optimization1 - HDF5 file output created by optimization code.
- - AlphabetSoupCharity_Optimization - jupyter notebook file, created in Google Colab, that contains the code for optimizing the model.
- - AlphabetSoupCharity_Optimization1 - jupyter notebook file, created in Google Colab, that contains the code for optimizing the model.
+ - [Starter_Code_Colab](https://github.com/EvgeniiaKei/deep-learning-challenge/blob/main/Starter_Code_Colab.ipynb) - jupyter notebook file, created in Google Colab, that contains the initial code for training the model.
+ - [AlphabetSoupCharity_Optimization](https://github.com/EvgeniiaKei/deep-learning-challenge/blob/main/AlphabetSoupCharity_Optimization.ipynb), [AlphabetSoupCharity_Optimization1](https://github.com/EvgeniiaKei/deep-learning-challenge/blob/main/AlphabetSoupCharity_Optimization1.ipynb) - jupyter notebook file, created in Google Colab, that contains the code for optimizing the model.
  - README - contains final analysis.
- - Starter_Code_Colab - jupyter notebook file, created in Google Colab, that contains the initial code for training the model.
 
 # Overview of the Analysis
 
